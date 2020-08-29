@@ -64,7 +64,7 @@
         // 获取用户的按键,改变小蛇的方向
         document.addEventListener("keydown",function (e) {
             //这里的this应该是触发keydown的事件的对象---document,
-            //所以,这里的this就是document
+            //所以,这里的this就是document,可以通过bind(that),把this变成当前游戏对象
             //获取按键的值
             switch (e.keyCode){
                 case 37:this.snake.direction="left";break;
